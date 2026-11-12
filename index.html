@@ -28,3 +28,43 @@ font-size:50px;
 
 </body>
 </html>
+<body>
+
+<div>
+<h1>✨ Welcome To Aditi's Universe ✨</h1>
+
+<img id="slide" src="photo1.png" style="
+width:320px;
+height:420px;
+object-fit:cover;
+border-radius:25px;
+margin:20px;
+box-shadow:0 0 25px rgba(255,255,255,.4);
+">
+
+<p>Ultra Premium Version Loading ❤️</p>
+</div>
+
+<script>
+
+const photos=[
+"photo1.png",
+"photo2.png",
+"photo3.png",
+"photo4.png"
+];
+
+let current=0;
+
+setInterval(()=>{
+
+current=(current+1)%photos.length;
+
+document.getElementById("slide").src=
+photos[current];
+
+},2000);
+
+</script>
+
+</body>
