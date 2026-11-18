@@ -66,7 +66,19 @@ transform:translateY(-120px);
 <img id="slide" src="photo1.png">
 
 <p id="typing"></p>
+<br>
 
+<button onclick="showAward()" style="
+padding:15px 25px;
+border:none;
+border-radius:20px;
+background:#ff4fa3;
+color:white;
+font-size:18px;
+cursor:pointer;
+">
+🏆 Open Secret Award
+</button>
 <script>
 
 const photos=[
@@ -132,7 +144,44 @@ setTimeout(typeWriter,60);
 }
 
 }
+function showAward(){
 
+document.body.innerHTML=`
+
+<div style="
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+color:white;
+background:linear-gradient(135deg,#0f172a,#db2777);
+">
+
+<h1 style="font-size:50px;">
+🏆 World's Best Bestie Award 🏆
+</h1>
+
+<h2>
+Winner:
+</h2>
+
+<h1>
+Aditi Singh Chauhan ❤️
+</h1>
+
+<p style="max-width:700px;font-size:22px;">
+Some people become special without even trying.
+
+Thanks for being one of my favourite humans ❤️
+</p>
+
+</div>
+
+`;
+
+}
 typeWriter();
 </script>
 
