@@ -65,7 +65,7 @@ transform:translateY(-120px);
 
 <img id="slide" src="photo1.png">
 
-<p>Ultra Premium Version Loading ❤️</p>
+<p id="typing"></p>
 
 <script>
 
@@ -113,7 +113,27 @@ heart.style.animationDuration=
 
 document.body.appendChild(heart);
 
+}const text =
+"Loading the world's best bestie... ❤️";
+
+let i = 0;
+
+function typeWriter(){
+
+if(i < text.length){
+
+document.getElementById("typing")
+.innerHTML += text.charAt(i);
+
+i++;
+
+setTimeout(typeWriter,60);
+
 }
+
+}
+
+typeWriter();
 </script>
 
 </body>
